@@ -1,0 +1,38 @@
+"""Application defaults aligned with PROJECT_PLAN.md."""
+
+from __future__ import annotations
+
+# k-NN matching (§4.2.1)
+K_NEIGHBORS_DEFAULT = 300
+K_NEIGHBORS_MIN = 100
+K_NEIGHBORS_MAX = 500
+
+# Regularized Mahalanobis: Σ_λ = Σ + λ I, λ = COV_RIDGE_TRACE_FRAC * tr(Σ) / n_features
+COV_RIDGE_TRACE_FRAC = 1e-3
+MATCHING_FEATURE_COUNT = 4
+
+# Match Quality Index (§4.4)
+MQI_HIGH_THRESHOLD = 1.2
+MQI_MODERATE_THRESHOLD = 2.0
+MQI_ADAPTIVE_NEIGHBOR_DISTANCE = 2.5
+
+# Lens B (§2.1)
+LENS_B_MIN_WEIGHTED_N = 200
+LENS_B_BMI_MIN = 18.5
+LENS_B_BMI_MAX = 25.0
+LENS_B_SBP_MAX = 120
+LENS_B_DBP_MAX = 80
+LENS_B_HBA1C_MAX = 5.7
+LENS_B_FPG_MAX = 100.0
+
+# Percentile display bounds (§4.3)
+PERCENTILE_FLOOR = 0.1
+PERCENTILE_CEILING = 99.9
+
+# NHANES pooling
+NHANES_CYCLES = ("2013_2014", "2015_2016", "2017_2018")
+POOL_CYCLE_DIVISOR = 3
+
+# Fairness audit (§6.4)
+FAIRNESS_COVERAGE_GAP_THRESHOLD_PP = 3.0
+FAIRNESS_MIN_WEIGHTED_N = 50

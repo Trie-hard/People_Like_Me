@@ -1,0 +1,30 @@
+# Harmonized column names for People Like Me processed tables.
+# Source: PROJECT_PLAN.md §3.3
+
+mec_columns:
+  - seqn
+  - cycle
+  - ridageyr
+  - riagendr
+  - ridreth3
+  - indfmpir
+  - sdmvstra
+  - sdmvpsu
+  - bmxbmi
+  - sbp
+  - dbp
+  - map
+  - pp
+  - lbxgh
+  - lbxtc
+  - lbdhdd
+  - diq010
+  - wtmec6yr
+  - on_glucose_med # Boolean: Taking insulin or diabetes pills (DIQ050/DIQ070) or prescribed antidiabetics (RXQ_RX)
+  - on_lipid_med   # Boolean: Prescribed statin-class lipid-lowering medication (RXQ_RX)
+
+fasting_extra_columns:
+  - lbxglu
+  - lbxtr
+  - wtsaf6yr
+  - phafsthr

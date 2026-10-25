@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Data Files (Keep raw NHANES downloads out of git; processed Parquet is bundled for deploy)
+data/raw/
+*.xpt
+*.XPT
+
+# Caches
+.pytest_cache/
+
+# Distribution / Packaging
+build/
+dist/
+*.egg-info/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints
+
